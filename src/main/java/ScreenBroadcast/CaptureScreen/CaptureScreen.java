@@ -1,3 +1,11 @@
+/**
+ * @Author       : Rinwhisper
+ * @Date         : 2021-01-06 23:25:29
+ * @LastEditTime : 2021-01-07 22:05:58
+ * @LastEditors  : Rinwhisper
+ * @FilePath     : \ScreenBroadcast\src\main\java\ScreenBroadcast\CaptureScreen\CaptureScreen.java
+ * @Description  : 
+ */
 package ScreenBroadcast.CaptureScreen;
 
 import java.awt.Dimension;
@@ -33,6 +41,12 @@ public class CaptureScreen {
         }
     }
 
+    /**
+     * @description：   获得字节数组格式的截屏图像
+     * @param {*}
+     * @return          byte[] 格式
+     * @exception: 
+     */
     static private byte[] getByteArrayImage() {
         try {
             image.reset();
