@@ -1,10 +1,10 @@
 /**
  * @Author       : Rinwhisper
  * @Date         : 2021-01-07 15:11:06
- * @LastEditTime : 2021-01-07 21:52:37
+ * @LastEditTime : 2021-01-09 20:42:13
  * @LastEditors  : Rinwhisper
- * @FilePath     : \ScreenBroadcast\src\main\java\ScreenBroadcast\Tools\Tools.java
- * @Description  : 类 Tools 主要用于给项目提供一些有用的工具
+ * @FilePath     : \ScreenBroadcast\src\main\java\ScreenBroadcast\Tools\Path.java
+ * @Description  : 用于提供一些 path 相关的工具
  */
 package ScreenBroadcast.Tools;
 
@@ -16,7 +16,7 @@ import ScreenBroadcast.App;
 
 
 
-public class Tools {
+public class Path {
     /**
      * @description： 	返回项目的根路径，vs code 中为项目根目录，jar 包为 jar 包的运行目录（无论是以何种
      * 					方式运行 jar 文件，皆返回 jar 文件所在目录）

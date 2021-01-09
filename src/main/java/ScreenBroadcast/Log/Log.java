@@ -1,7 +1,7 @@
 /**
  * @Author       : Rinwhisper
  * @Date         : 2021-01-06 23:23:53
- * @LastEditTime : 2021-01-07 22:03:44
+ * @LastEditTime : 2021-01-09 20:40:21
  * @LastEditors  : Rinwhisper
  * @FilePath     : \ScreenBroadcast\src\main\java\ScreenBroadcast\Log\Log.java
  * @Description  : Log.java 实现日志功能
@@ -15,7 +15,7 @@ import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import ScreenBroadcast.Tools.Tools;
+import ScreenBroadcast.Tools.Path;
 
 public class Log {
     private static String log_filename = "log.txt";
@@ -29,7 +29,7 @@ public class Log {
     static{
         try{
             fw = new BufferedWriter(new FileWriter(
-                Tools.getProjectOrRunRootPath() + "\\" + log_filename, true));
+                Path.getProjectOrRunRootPath() + "\\" + log_filename, true));
         }catch(UnsupportedEncodingException e){
                 System.err.println("获得项目路径或 jar 包运行路径失败（UTF-8 解码失败）");
                 e.printStackTrace();

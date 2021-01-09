@@ -1,27 +1,20 @@
 /**
  * @Author       : Rinwhisper
  * @Date         : 2021-01-06 22:56:57
- * @LastEditTime : 2021-01-07 21:29:17
+ * @LastEditTime : 2021-01-09 21:58:12
  * @LastEditors  : Rinwhisper
  * @FilePath     : \ScreenBroadcast\src\main\java\ScreenBroadcast\App.java
  * @Description  : 
  */
-/*
- * @Author: your name
- * @Date: 2021-01-06 22:56:57
- * @LastEditTime: 2021-01-07 19:31:28
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: \ScreenBroadcast\src\main\java\ScreenBroadcast\App.java
- */
-
 
 package ScreenBroadcast;
 
 import java.io.File;
 import java.net.URLDecoder;
 
-import ScreenBroadcast.Tools.Tools;
+import ScreenBroadcast.CaptureScreen.CaptureScreen;
+import ScreenBroadcast.Tools.Compress;
+import ScreenBroadcast.Tools.Path;
 
 /**
  * Hello world!
@@ -31,6 +24,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("t/target/classes/".indexOf("target"));
+        byte[] img = CaptureScreen.capture();
+        System.out.println(img.length);
+        System.out.println(Compress.compress(img).length);
     }
 }
